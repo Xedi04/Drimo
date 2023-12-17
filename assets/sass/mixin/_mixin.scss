@@ -1,0 +1,30 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-d{
+    display: flex;
+    flex-direction: column;
+}
+@mixin mini{
+    width: 100%;
+    @include flex;
+}
+
+@mixin head{
+    width:60%;
+    @include flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    h2{
+        font-size: 35px;
+        font-weight: 300;
+    }
+    .line{
+        width: 70px;
+        height: 2px;
+        background-color: #6b6d6f;
+    }
+}
